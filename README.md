@@ -29,10 +29,10 @@ Data disimpan menggunakan `localStorage` sehingga tetap ada meskipun halaman di-
 ## Cara Menjalankan & Cara Kerja Aplikasi
 
 1. Clone repository:
-   git clone https://github.com/username/todo-crud-app.git
+   git clone https://github.com/AyamBerenang/Capstone-Project-CRUD-ToDoListApp.git
 
 2. Masuk ke folder proyek:
-   cd
+   cd "Capstone Project"
 
 3. Buka file index.html di Browser
 
