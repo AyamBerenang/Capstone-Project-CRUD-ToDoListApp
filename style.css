@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 24px 12px;
+}
+
+.container {
+  max-width: 520px;
+  margin: 32px auto;
+  padding: 22px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 18px;
+  color: #222;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#addTaskBtn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#addTaskBtn:hover {
+  background: #0062cc;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 0 16px;
+}
+
+.filter-btn {
+  border: 1px solid #dedede;
+  background: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.filter-btn:hover {
+  background: #e8e8e8;
+}
+
+.filter-btn.active {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+li.done .task-text {
+  text-decoration: line-through;
+  color: #8b8b8b;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+button.action {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.action.done {
+  background: #28a745;
+  color: #fff;
+}
+button.action.done:hover {
+  background: #218838;
+}
+
+button.action.edit {
+  background: #ffc107;
+  color: #222;
+}
+button.action.edit:hover {
+  background: #e0a800;
+}
+
+button.action.delete {
+  background: #dc3545;
+  color: #fff;
+}
+button.action.delete:hover {
+  background: #c82333;
+}
+
+@media (max-width: 420px) {
+  .task-buttons {
+    gap: 6px;
+  }
+  button.action {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
